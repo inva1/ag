@@ -12,7 +12,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///agrolink.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
-@app.route('/ussd', methods=['POST'])
+@app.route('/', methods=['POST', 'GET'])
 def ussd():
     session_id = request.form.get('sessionId')
     phone_number = request.form.get('phoneNumber')
