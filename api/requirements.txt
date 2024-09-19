@@ -1,5 +1,6 @@
+Python==3.11
 Flask
 Flask-SQLAlchemy
 geopy
 requests
-Werkzeug
+Werkzeug==2.3.0
