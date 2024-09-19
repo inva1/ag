@@ -1,6 +1,9 @@
 from flask import Flask, request
+from flask_sqlalchemy import SQLAlchemy
 from services.ussd_handler import handle_ussd_request
-from models import db
+#from models import db
+
+db = SQLAlchemy()
 
 app = Flask(__name__)
 
